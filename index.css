@@ -1,0 +1,110 @@
+.deleteimg {
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  margin: 0 auto;
+}
+
+.delete {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.myinput {
+  border-radius: 8px;
+}
+
+.inputbtn {
+  /*float: right;*/
+  background-color: green;
+  /*border: 1px solid green;*/
+  border-radius: 8px;
+  font-size: 25px;
+  color: #ffffff;
+}
+
+#show {
+  text-align: center;
+  font-size: 25px;
+  float: right;
+  /*margin-top: 3px;*/
+  /*margin-bottom: 3px;*/
+  padding: 1px
+}
+
+.myform {
+  width: auto;
+  height: 40px;
+  /*border: 1px solid black;*/
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  float: left;
+}
+
+#buttons {
+  width: 18%;
+  height: auto;
+  float: right;
+  font-size: 80px;
+  /*border: 1px solid black;*/
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+#id_port {
+  width: auto;
+}
+
+#id_timeout {
+  width: 80px;
+}
+
+#id_table {
+  /*border: 1px solid black;*/
+  margin-top: 0px
+}
+
+.alt {
+  background-color: #CCCCCC;
+}
+
+tr.alt td {
+  /*color: red;*/
+  background-color: #CCCCCC;
+}
+
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+/*tr: odd {
+  background-color: #ff0000;
+}
+
+tr: even {
+  background-color: #ffffff;
+}*/
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #888888;
+}
+
+tr {
+  height: 50px;
+}
+
+td {
+  width: 25%;
+}
