@@ -1,27 +1,23 @@
 // $('tr:odd').style.background-color = #AAAAAA
 
-var log = function(i) {
-  console.log(i)
-}
-
-$(document).ready(function() {
-  $("#show").click(function() {
-    $(".mytable").html('\
-      <tr>\
-        <th>ip</th>\
-        <th>port</th>\
-        <th>des</th>\
-        <th>open or not</th>\
-      </tr>\
-      <tr>\
-        <td>120.220.2.35</td>\
-        <td>443</td>\
-        <td>https</td>\
-        <td>open</td>\
-      </tr>\
-    ')
-  })
-})
+// $(document).ready(function() {
+//   $("#show").click(function() {
+//     $(".mytable").html('\
+//       <tr>\
+//         <th>ip</th>\
+//         <th>port</th>\
+//         <th>des</th>\
+//         <th>open or not</th>\
+//       </tr>\
+//       <tr>\
+//         <td>120.220.2.35</td>\
+//         <td>443</td>\
+//         <td>https</td>\
+//         <td>open</td>\
+//       </tr>\
+//     ')
+//   })
+// })
 
 var i = 1
 var addtr = function(ip, port, des, open) {
@@ -71,6 +67,7 @@ $(document).ready(function() {
   })
 })
 
+
 var callback = function(target,port,status){
     // show table
     $('#id_table').css({'display': 'block'})
@@ -111,4 +108,8 @@ var scanall = function() {
     // log('tr' + tr[i])
     tr.eq(i).css('background-color', '#CCCCCC')
   }
+}
+
+var f = function() {
+
 }

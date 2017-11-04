@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>本机端口扫描</title>
+  <link rel="stylesheet" type="text/css" href="./index.css"/>
+  <script src="./jquery-3.2.1.min.js"></script>
+  <script src="./1.js"></script>
+  <script src="attackports.js"></script>
+  <script src="utils.js"></script>
+  <!-- <script src="test.js"></script> -->
+</head>
+<body>
+
+  <div class=container>
+
+    </br>
+    <div class=myform id='result' onsubmit="">
+      <span>
+      <div style="display:none;">ip: </div> <input class=myinput type="text" id='id_target' name="target" value="127.0.0.1" style="display:none;">
+      port: <input class=myinput type="text" id=id_port name="port" value="443,80,8080,23,25">
+      timeout: <input class=myinput type="number" id='id_timeout' name="timeout" value="1000">
+      <button class=inputbtn value="scan" onclick="scan()">scan</button>
+      <button class=inputbtn id="menu" onclick="menu()">menu</button>
+      <!-- <button class=inputbtn value="scan" onclick="scanall()">scanall</button> -->
+      </span>
+    </div>
+    </br>
+
+    </br>
+    <div id=id_table style="display: none">
+      <table class=mytable>
+          <tr>
+            <th>ip</th>
+            <th>port</th>
+            <th>protocol</th>
+            <th>open?</th>
+          </tr>
+          <tbody id=id_tbody>
+          <tr>
+            <td>127.0.0.1</td>
+            <td>443</td>
+            <td>https</td>
+            <td>open</td>
+          </tr>
+          <tr class=alt>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+</body>
+</html>

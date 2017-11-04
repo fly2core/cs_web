@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>远程端口扫描</title>
+  <link rel="stylesheet" type="text/css" href="./index.css"/>
+  <script src="./jquery-3.2.1.min.js"></script>
+  <script src="index.js"></script>
+  <script src="attackports.js"></script>
+  <script src="utils.js"></script>
+  <script src="2.js"></script>
+  <!-- <script src="test.js"></script> -->
+</head>
+<body>
+
+  <div class=container>
+
+    </br>
+    <div class=myform id='result' onsubmit="">
+      <span>
+      ip: <input class=myinput type="text" id='id_target' name="target" value="119.29.114.50">
+      port: <input class=myinput type="text" id=id_port name="port" value="443,80,8080,23,25">
+      timeout: <input class=myinput type="number" id='id_timeout' name="timeout" value="1000">
+      <button class=inputbtn value="scan" onclick="scan()">scan</button>
+      <button class=inputbtn id="menu" onclick="menu()">menu</button>
+      <!-- <button class=inputbtn value="scan" onclick="scanall()">scanall</button> -->
+      </span>
+    </div>
+    </br>
+
+    <!-- <div id=buttons>
+      <button id=show class=inputbtn> show </button>
+    </div> -->
+
+    </br>
+    <div id=id_table style="display: none">
+      <table class=mytable>
+          <tr>
+            <th>ip</th>
+            <th>port</th>
+            <th>protocol</th>
+            <th>open?</th>
+          </tr>
+          <tbody id=id_tbody>
+          <tr>
+            <td>119.29.114.50</td>
+            <td>443</td>
+            <td>https</td>
+            <td>open</td>
+          </tr>
+          <tr class=alt>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+
+<!-- <button id=addtr>add</button>
+<button id=setcolor>setcolor</button>
+<button id=port>porttest</button> -->
+
+  <!-- <script>
+    $('.mytable').innerHTML = "<tr>\
+      <th>ip</th>\
+      <th>port</th>\
+      <th>des</th>\
+      <th>open?</th>\
+    </tr>\
+    <td>120.220.2.36</td>\
+    <td>443</td>\
+    <td>https</td>"
+    console.log("over")
+  </script> -->
+
+</body>
+</html>
